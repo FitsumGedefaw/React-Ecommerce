@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React, { useContext } from 'react';
 import './App.css';
+import CartModal from './components/cart/CartModal';
+import Header from './components/Header';
+import HomePageText from './components/HomePageText';
+import MealsList from './components/MealsList';
+import MealsContext from './context/meals-context';
 
 function App() {
+  const mealsContextValue = useContext(MealsContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <React.Fragment>
+    <Header />
+    {mealsContextValue.showCart && <CartModal />}
+    <HomePageText />
+    <MealsList />
+   </React.Fragment>
   );
 }
 

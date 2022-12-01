@@ -1,0 +1,11 @@
+.home-page-text-card{
+    width: 90%;
+    max-width: 40rem;
+    margin-inline: auto;
+    margin-top: 30vh;
+    margin-bottom: 2rem;
+    background-color: rgb(40, 37, 37);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}

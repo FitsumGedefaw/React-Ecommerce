@@ -1,0 +1,34 @@
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-div h3{
+    margin-bottom: 0;
+}
+.col{
+    width: 50%;
+}
+.price-amount-row{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    font-size: larger;
+    padding: 0rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.minus-button{
+    margin-inline: 0.5rem;
+}
+.quantity-p{
+    font-weight: bold;
+    padding: 0 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+

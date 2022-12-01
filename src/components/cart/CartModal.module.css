@@ -1,0 +1,45 @@
+.back-drop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.80);
+}
+.cart-modal{
+    background-color: white;
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+    padding: 1rem;
+}
+@media(min-width: 768px){
+    .cart-modal{
+        left: calc(52% - 20rem);
+        width: 35rem;
+    }
+}
+.total-price-div{
+    display: flex;
+    justify-content: space-between;
+}
+.close-order-buttons-div{
+    text-align: right;
+}
+.order-button{
+    padding: 0.5rem 1.5rem;
+    background-color: brown;
+    border: 1px solid brown;
+    color: white;
+}
+.close-button{
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    border: 1px solid brown;
+    color: brown;
+    margin-inline: 1rem;
+}

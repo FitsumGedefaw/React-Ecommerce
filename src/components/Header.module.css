@@ -1,0 +1,19 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: brown;
+    color: white;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.button{
+    padding: 0.5rem 2rem;
+    background-color: rgb(37, 24, 24);
+    border: 1px solid brown;
+    color: white;
+}
