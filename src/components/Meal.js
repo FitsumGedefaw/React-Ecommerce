@@ -18,14 +18,14 @@ const Meal = (props) => {
     <React.Fragment>
       <div className={styles.meal}>
         <div className={styles.col}>
-          <p>{props.name}</p>
+          <p className={styles['meal-name']}>{props.name}</p>
           <p>{props.description}</p>
           <p>{props.price}</p>
         </div>
         <div className={`${styles.col} ${styles["col-second"]}`}>
           <div>
             <label>Amount</label>
-            <input type="number" ref={amountRef} defaultValue={1} />
+            <input type="number" max='5' ref={amountRef} defaultValue={1} />
           </div>
           <Button className={styles.button} onClick={addToCartHandler}>
             +Add
